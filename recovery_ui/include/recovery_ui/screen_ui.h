@@ -127,7 +127,7 @@ class TextMenu : public Menu {
   size_t MenuEnd() const;
 
   // Menu example:
-  // info:                           Android Recovery
+  // info:                           Pixel-Project Recovery
   //                                 ....
   // help messages:                  Swipe up/down to move
   //                                 Swipe left/right to select
@@ -350,7 +350,9 @@ class ScreenRecoveryUI : public RecoveryUI, public DrawInterface {
   std::unique_ptr<GRSurface> try_again_text_;
   std::unique_ptr<GRSurface> wipe_data_confirmation_text_;
   std::unique_ptr<GRSurface> wipe_data_menu_header_text_;
-
+  std::unique_ptr<GRSurface> default_logo;
+  std::unique_ptr<GRSurface> back_icon_;
+  std::unique_ptr<GRSurface> back_icon_sel_;
   std::unique_ptr<GRSurface> fastbootd_logo_;
 
   // current_icon_ points to one of the frames in intro_frames_ or loop_frames_, indexed by
