@@ -48,6 +48,7 @@ cc_library {
     ],
 
     shared_libs: [
+        "android.hardware.health-V4-ndk",
         "libbase",
         "libpng",
         "libz",
